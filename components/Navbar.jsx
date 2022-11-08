@@ -13,13 +13,13 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 return (
     <nav className ="fixed w-full h-[100px] flex justify-between items-center px-4  text-white bg-gradient-to-r from-sky-500 to-blue-800 text-spacing z-30"> 
-        <Link  to="home"  smooth={true} duration={500} className="p"> 
+        <a  href="/"  smooth={true} duration={500} className="p"> 
             <Image src="/profile.jpg" alt="My Profile" width={500} height={500} className="rounded-full object-cover w-20 h-20 m-5 hover:cursor-pointer"/>
-        </Link>
+        </a>
          {/* WebMenu*/}
             <ul className="hidden md:flex flex-row justify-between items-center hover:cursor-pointer text-spacing" >
                 <li className="px-5">
-                    <Link to= "home"  smooth={true} duration={500}>
+                    <Link to="home"  smooth={true} duration={500}>
                         Home
                     </Link>
                 </li>
@@ -42,6 +42,11 @@ return (
                     <Link  to="contact"  smooth={true} duration={500}>
                          Contact
                     </Link>
+                </li>
+                <li className="px-5">
+                    <a href= "./login">
+                        Sign in
+                    </a>
                 </li>
             </ul>
 

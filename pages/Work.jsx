@@ -16,17 +16,18 @@ const Work = () => {
             {/*Container for my work */}
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-5'>
                 <div>
-                <div className='shadow-lg shadow-sky-500 group container rounde-md flex justify-center items-center mx-auto bg-image-card h-72'>
+                <div className='shadow-lg shadow-sky-500 group container rounded-md flex justify-center items-center mx-auto bg-image-card h-72'>
                     {/* Hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            JS application
+                    <div className=''>
+                        <span className='flex flex-col items-center text-2xl font-bold text-white tracking-wider bg-image-card text-center'>
+                            Fly JS Game!
                         </span>
-                        <div className='pt-8 text-center'>
+                        <Image src="/icons8-github-512.png" alt="My Profile" width={500} height={500} className=" flex mx-auto justify-center items-center rounded-full object-cover w-20 h-20 m-5 "/>
+                        <div className='opacity:0 text-center hover:opacity-110 bg-imagecard'>
                             <a href="/"/>{/*upload Demo code */}
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Demo</button>
-                            <a href="/"/> {/*upload Github code */}
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Code</button>
+                                <button className='hover:opacity:0 text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Demo</button>
+                            <a href="/https://github.com/samglz10/web-game-starter"/> {/*upload Github code */}
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Code </button>
                         </div>
                     </div>
                 </div>
@@ -34,10 +35,11 @@ const Work = () => {
             {/* Second Grid image */}
                 <div className='shadow-lg shadow-sky-500 group container rounde-md flex justify-center items-center mx-auto bg-image-card h-72'>
                     {/* Hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            JS application
+                    <div className=''>
+                        <span className='flex flex-col items-center text-2xl font-bold text-white tracking-wider bg-image-card text-center'>
+                            Favorite Movies Watchlist Site!
                         </span>
+                        <Image src="/movies-logo.svg" alt="My Profile" width={500} height={500} className=" flex mx-auto justify-center items-center rounded-full object-cover w-20 h-20 m-5 "/>
                         <div className='pt-8 text-center'>
                             <a href="/"/>{/*upload Demo code */}
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Demo</button>
@@ -49,10 +51,11 @@ const Work = () => {
             {/* Third Grid image */}
                 <div className='shadow-lg shadow-sky-500 group container rounde-md flex justify-center items-center mx-auto bg-image-card h-72'>
                     {/* Hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
+                    <div className=''>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             JS application
                         </span>
+                        <Image src="/comic-logo.svg" alt="My Profile" width={500} height={500} className=" flex mx-auto justify-center items-center rounded-full object-cover w-20 h-20 m-5 "/>
                         <div className='pt-8 text-center'>
                             <a href="/"/> {/*upload Demo code */}
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Demo</button>

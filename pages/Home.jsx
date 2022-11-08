@@ -5,7 +5,7 @@ import 'tailwindcss/tailwind.css'
 
 const Home = () =>{
     return (
-        <div name="home" className='h-screen w-full text-white bg-slate-700'>
+        <div name="home"  className='h-screen w-full text-white bg-slate-700'>
             {/*Container*/}
             <div className="max-w-[1000px] mx-auto px-4 flex flex-col justify-center h-full ">
                 <h1 className="font-bold text-white text-5xl py-1"> Hi name is Samuel Gonzalez</h1>

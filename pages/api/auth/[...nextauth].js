@@ -7,7 +7,7 @@ export default NextAuth({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
         }),
-        //add github in here
+        //add github in here if able
     ],
     secret: process.env.JWT_SECRET
 });

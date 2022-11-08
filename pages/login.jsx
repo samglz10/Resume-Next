@@ -8,17 +8,20 @@ const login = () =>{
     if (session){
         return (
             <>
-                <p>Welcome, {session.user.name} </p>
-                <img src={session.user.image} alt="google profile img" height={500} width={500}className="rounded-full"/>
+            <div className='flex flex-col h-full w-full bg-slate-bg-slate-700'>
+                <p className='bg-black text-7xl'>Welcome, {session.user.name} </p>
+                <img src={session.user.image} alt="google profile img" height={500} width={500} className="rounded-full"/>
                 <button className="rounded-md h-5 w-5" onClick={()=> signOut()}></button>
-            
+            </div>
             </>
         )
     } else {
         return (
             <> 
-                <p> You are not signed in.</p> 
-                <button onClick={()=> signIn()}></button>
+                <div className='flex flex-col h-full w-full bg-slate-bg-slate-700'>
+                    <p className=' text-black'> You are not signed in.</p> 
+                    <button className='h-full w-full bg-black text-white' onClick={()=> signIn()}> Sign in</button>
+                </div>
             </>
         )
     }

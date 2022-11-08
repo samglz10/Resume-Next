@@ -7,13 +7,13 @@ const account = () => {
         return (
             <div>
                 <p> Welcome {session.user.name}</p>
-                <button onClick={()=> signOut()} className="rounded-md h-20 w-20">Sing out</button>
+                <button onClick={()=> signOut()} className="rounded-md h-20 w-20">Sign out</button>
             </div>
         )
     } else {
         return (
             <div>
-                <p> You're not signed in.</p>
+                <p className='flex justify-center items-center text-center'> You're not signed in.</p>
             </div>
         )
     }

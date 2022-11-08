@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import Home from './Home'
 import React from 'react'
+import Home from './Home'
 import Navbar from '../components/Navbar'
 import About from './About'
 import Skills from './Skills'
 import Work from './Work'
 import Contact from './Contact'
+
+
 export default function Main() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Main() {
       <Skills/>
       <Work/>
       <Contact/>
+    
 
     </>
    )

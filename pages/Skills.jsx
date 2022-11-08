@@ -18,8 +18,8 @@ const Skills = () => {
                 </div>
                 {/* Container for all icons*/}
                 <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-5 text-center py-8 rounded-lg'>
-                    <div className='shadow-lg hover:shadow-sky-500 hover:scale-110 duration-300 bg-slate-700 h-full py-2 '>
-                        <Image src="/HTML5-logo.svg" alt="HTML Logo" width={500} height={500} className='w-20 mx-auto my-10  '/>
+                    <div className='shadow-lg hover:shadow-sky-500 hover:scale-110 duration-300 bg-slate-700 h-full  '>
+                        <Image src="/HTML5-logo.svg" alt="HTML Logo" width={500} height={500} className='w-20 mx-auto my-10 '/>
                         <p className='my-4'>HTML</p>
                         <RiMedal2Line className='h-10 w-10 border-b-4 text-stone-500 rounded-full cursor-pointer bg-gradient-to-r from-stone-100 to-stone-500 hover:scale-125' />
                     </div> 
@@ -29,7 +29,7 @@ const Skills = () => {
                         <RiMedal2Line className='h-10 w-10 border-b-4 text-stone-500 rounded-full cursor-pointer bg-gradient-to-r from-stone-100 to-stone-500 hover:scale-125' />
                     </div>
                     <div className='shadow-lg hover:shadow-sky-500 hover:scale-110 duration-500 bg-slate-700'>
-                        <Image src="/javascript-logo.png" alt="JavaScript Logo" width={500} height={500} className='w-20 mx-auto my-10'/>
+                        <Image src="/JavaScript_logo.svg" alt="JavaScript Logo" width={500} height={500} className='w-20 mx-auto my-10'/>
                         <p className='my-4'>JavaScript</p>
                         <RiMedal2Line className='h-10 w-10 border-b-4 text-stone-500 rounded-full cursor-pointer bg-gradient-to-r from-stone-100 to-stone-500 hover:scale-125' />
                     </div>
