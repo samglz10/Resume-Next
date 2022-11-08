@@ -1,43 +1,44 @@
 import {useState} from 'react';
-import profile from '../public/profile.jpg';
+import Image from 'next/image'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {Link} from 'react-scroll'
 import 'tailwindcss/tailwind.css'
 
+
 const Navbar = () => {
     const[nav, setNav] = useState(false)
     //setNav will set nav to it's opposite value
     const handleClick = () => setNav(!nav)
 return (
-    <nav className ="fixed w-full h-[100px] flex justify-between items-center px-4  text-white bg-gradient-to-r from-sky-500 to-blue-800 z-30"> 
-        <Link  to="home"  smooth={true} duration={500}> 
-            <img src={profile} alt="My Profile" className="rounded-full object-cover w-20 h-20 m-5 hover:cursor-pointer"/>
+    <nav className ="fixed w-full h-[100px] flex justify-between items-center px-4  text-white bg-gradient-to-r from-sky-500 to-blue-800 text-spacing z-30"> 
+        <Link  to="home"  smooth={true} duration={500} className="p"> 
+            <Image src="/profile.jpg" alt="My Profile" width={500} height={500} className="rounded-full object-cover w-20 h-20 m-5 hover:cursor-pointer"/>
         </Link>
          {/* WebMenu*/}
-            <ul className="hidden md:flex flex-row justify-between items-center " >
-                <li className="text-spacing">
-                    <Link  to="home"  smooth={true} duration={500}>
+            <ul className="hidden md:flex flex-row justify-between items-center hover:cursor-pointer text-spacing" >
+                <li className="px-5">
+                    <Link to= "home"  smooth={true} duration={500}>
                         Home
                     </Link>
                 </li>
-                <li className="text-spacing">
+                <li className="px-5">
                     <Link  to="about"  smooth={true} duration={500}>
                         About
                     </Link>
                 </li>
-                <li className="text-spacing">
+                <li className="px-5">
                     <Link  to="skills"  smooth={true} duration={500}>
                         Skills
                     </Link>
                 </li>
-                <li className="text-spacing">
+                <li className="px-5">
                     <Link  to="work"  smooth={true} duration={500}>
                         Work
                     </Link>
                 </li>
-                <li className="text-spacing">
+                <li className="px-5">
                     <Link  to="contact"  smooth={true} duration={500}>
                          Contact
                     </Link>
@@ -51,7 +52,7 @@ return (
             {}
         </div>
         {/* mobile menu*/}
-        <div className={!nav ? "hidden":"absolute top-0 left-0 w-full h-screen text-white bg-gradient-to-r  from-sky-500 to-blue-800 flex flex-col justify-center items-center"}>
+        <div className={!nav ? "hidden":"absolute top-0 left-0 w-full h-screen text-white bg-gradient-to-r  from-sky-500 to-blue-800 flex flex-col justify-center items-center z-30"}>
         <ul>
             <li className="py-6 text-4xl" >
                 <Link onClick={handleClick} to="home"  smooth={true} duration={500}>
