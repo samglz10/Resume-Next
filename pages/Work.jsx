@@ -6,7 +6,7 @@ import Javascriptlogo from '../public/javascriptlogo.png'
 const Work = () => {
 
     return (
-      <div name= 'work' className="  w-full h-screen md:h-screen bg-slate-700 text-white flex flex-col justify-center px-4 ">
+      <div name= 'work' className="  md:w-full  md:h-screen bg-slate-700 text-white flex flex-col justify-center px-4 ">
         <div className='max-w-full p-4 flex flex-col justify-center w-full h-full px-16 '>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 text-white border-sky-700'>

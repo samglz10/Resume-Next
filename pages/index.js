@@ -7,16 +7,18 @@ import Work from './Work'
 import Contact from './Contact'
 
 
+
 export default function Main() {
   return (
     <>
-      <Navbar/>
+    <Navbar/>
+    <div className='flex flex-col justify-between '>
       <Home/>
       <About/>
       <Skills/>
       <Work/>
       <Contact/>
-    
+    </div>
 
     </>
    )

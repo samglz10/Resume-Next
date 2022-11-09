@@ -99,9 +99,10 @@ return (
                 </li>                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600 px-[10px]">
                     <a className= "flex justify-between items-center w-full text-gray-300"
                     href="/"> Email <HiOutlineMail size={40}/></a>
-                </li>                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-teal-500 px-[10px]">
+                </li>                
+                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-teal-500 px-[10px]">
                     <a className= "flex justify-between items-center w-full text-gray-300"
-                    href="/"> Resume <BsFillPersonLinesFill size={40}/></a>
+                    href="/Samuel_Gonzalez-Renteria_Resume_08-11-2022-19-51-53.pdf" alt="Resume PDF download"> Resume <BsFillPersonLinesFill size={40}/></a>
                 </li>
             </ul>
         </div>
