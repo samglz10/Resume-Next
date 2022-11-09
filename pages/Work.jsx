@@ -26,8 +26,8 @@ const Work = () => {
                         <div className='opacity:0 text-center hover:opacity-110 bg-imagecard'>
                             <a href="/"/>{/*upload Demo code */}
                                 <button className='hover:opacity:0 text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Demo</button>
-                            <a href="/https://github.com/samglz10/web-game-starter"/> {/*upload Github code */}
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Code </button>
+                            <a href="https://github.com/samglz10/web-game-starter"/> {/*upload Github code */}
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg' onCl> Code </button>
                         </div>
                     </div>
                 </div>

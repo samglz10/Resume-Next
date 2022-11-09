@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import Image from 'next/image'
+import{AiOutlineHome} from 'react-icons/ai'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs'
@@ -19,7 +20,7 @@ return (
          {/* WebMenu*/}
             <ul className="hidden md:flex flex-row justify-between items-center hover:cursor-pointer text-spacing" >
                 <li className="px-5">
-                    <Link to="home"  smooth={true} duration={500}>
+                    <Link to="home"  smooth={true} duration={500} >
                         Home
                     </Link>
                 </li>
@@ -59,7 +60,7 @@ return (
         {/* mobile menu*/}
         <div className={!nav ? "hidden":"absolute top-0 left-0 w-full h-screen text-white bg-gradient-to-r  from-sky-500 to-blue-800 flex flex-col justify-center items-center z-30"}>
         <ul>
-            <li className="py-6 text-4xl" >
+            <li className="py-6 text-4xl flex flex-col" >
                 <Link onClick={handleClick} to="home"  smooth={true} duration={500}>
                         Home
                 </Link>
@@ -96,7 +97,8 @@ return (
                 <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900 px-[10px]">
                     <a className= "flex justify-between items-center w-full text-gray-300"
                     href="https://github.com/samglz10"> Github <FaGithub size={40}/></a>
-                </li>                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600 px-[10px]">
+                </li>                
+                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600 px-[10px]">
                     <a className= "flex justify-between items-center w-full text-gray-300"
                     href="/"> Email <HiOutlineMail size={40}/></a>
                 </li>                
