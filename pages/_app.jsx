@@ -10,7 +10,6 @@ function App({Component, pageProps, session}) {
     <SessionProvider session={session}>
       <Component {...pageProps}/> 
       <Navbar/>
-      <LoginButton/>
     </SessionProvider>
   )
 }

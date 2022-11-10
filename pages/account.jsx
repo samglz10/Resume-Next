@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import {useSession, signOut, getSession} from 'next-auth/react'
 
 const account = () => {
