@@ -5,9 +5,9 @@ import 'tailwindcss/tailwind.css'
 
 const Home = () =>{
     return (
-        <div name="home"  className='h-screen w-full text-white bg-slate-700'>
+        <div name="home"  className='h-screen w-full text-white bg-slate-700 px-5 py-5'>
             {/*Container*/}
-            <div className="max-w-[1000px] mx-auto px-4 flex flex-col justify-center h-full px-4 ">
+            <div className="max-w-[1000px] mx-auto px-4 flex flex-col justify-center h-full  ">
                 <h1 className="font-bold text-white text-4xl py-1"> Hi name is Samuel Gonzalez</h1> 
                     <h2 className=" py-1 font-bold text-white text-4xl"> I am an Entry-Level Full Stack Developer</h2>
                     <p className="py-4 text-white max-w-l"> 

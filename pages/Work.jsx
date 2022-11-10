@@ -7,7 +7,7 @@ import Javascriptlogo from '../public/javascriptlogo.png'
 const Work = () => {
 
     return (
-      <div name= 'work' className="  md:w-full  md:h-screen bg-slate-700 text-white flex flex-col justify-center px-4 ">
+      <div name= 'work' className="  md:w-full  md:h-screen bg-slate-700 text-white flex flex-col justify-center px-5 ">
         <div className='max-w-full p-4 flex flex-col justify-center w-full h-full px-16 '>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 text-white border-sky-700'>
@@ -34,7 +34,7 @@ const Work = () => {
                 </div>
             </div> 
             {/* Second Grid image */}
-                <div className='shadow-lg shadow-sky-500 group container rounde-md flex justify-center items-center mx-auto bg-image-card h-72'>
+                <div className='shadow-lg shadow-sky-500 group container rounded-md flex justify-center items-center mx-auto bg-image-card h-72'>
                     {/* Hover effects */}
                     <div className=''>
                         <span className='flex flex-col items-center text-2xl font-bold text-white tracking-wider bg-image-card text-center'>
@@ -50,10 +50,10 @@ const Work = () => {
                     </div>
                 </div>
             {/* Third Grid image */}
-                <div className='shadow-lg shadow-sky-500 group container rounde-md flex justify-center items-center mx-auto bg-image-card h-72'>
+                <div className='shadow-lg shadow-sky-500 group container rounded-md flex justify-center items-center mx-auto bg-image-card h-72'>
                     {/* Hover effects */}
                     <div className=''>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
+                        <span className='flex flex-col items-center text-2xl font-bold text-white tracking-wider bg-image-card text-center'>
                             Comics in Context
                         </span>
                         <Image src="/comic-logo.svg" alt="My Profile" width={500} height={500} className=" flex mx-auto justify-center items-center rounded-full object-cover w-20 h-20 m-5 "/>
