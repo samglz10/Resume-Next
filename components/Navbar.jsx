@@ -57,7 +57,7 @@ return (
             {}
         </div>
         {/* mobile menu*/}
-        <div className={!nav ? "hidden":"absolute top-0 left-0 w-full h-screen text-white bg-gradient-to-r  from-sky-500 to-blue-800 flex flex-col justify-center items-center z-30"}>
+        <div className={!nav ? "hidden":"absolute text-center top-0 left-0 w-full h-screen text-white bg-gradient-to-r from-sky-500 to-blue-800 flex flex-col justify-center items-center z-30"}>
         <ul>
             <li className="py-6 text-4xl flex flex-col" >
                 <Link onClick={handleClick} to="home"  smooth={true} duration={500}>
