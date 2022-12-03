@@ -5,10 +5,10 @@ import 'tailwindcss/tailwind.css'
 
 const Home = () =>{
     return (
-        <div name="home"  className='h-screen w-full text-white bg-slate-700 px-5 py-5'>
+        <div name="home"  className='h-screen w-full text-white bg-slate-700 px-5 '>
             {/*Container*/}
             <div className="max-w-[1000px] mx-auto px-4 flex flex-col justify-center h-full  ">
-                <h1 className="font-bold text-white text-4xl py-1"> Hi name is Samuel Gonzalez</h1> 
+                <h1 className="font-bold text-white text-4xl py-1"> Hi my name is Samuel Gonzalez</h1> 
                     <h2 className=" py-1 font-bold text-white text-4xl"> I am an Entry-Level Full Stack Developer</h2>
                     <p className="py-4 text-white max-w-l"> 
                     I built this website in the hope of being able to share my knowledge of some of the tools I learned while taking a Full Software Program at American University. Please feel free to provide any feedback or any issues that you encounter at this site. 

@@ -12,7 +12,7 @@ const About = () => {
                 </div>
                 <div className="m-w-full w-full px-4 sm:grid grid-cols-2 gap-8 ">
                     <div className="sm:text-right pb-8 pl-4">
-                        <p className="text-3xl font-bold inline border-b-4 border-sky-500 "> Hi I am Samuel but I mostly go by Sam.
+                        <p className="text-3xl font-bold inline border-b-4 border-sky-500 "> You can just call me Sam.
                         </p>
                     </div>
                     <div>
