@@ -11,10 +11,10 @@ const Contact = () => {
             </div>
             <div className="flex flex-col justify-center text-center content-center w-1/2 place-content-center rounded-md bg-slate-800 p-4">
               <input className="p-2 flex flex-wrap bg-slate-500 rounded-lg my-2" type="text" placeholder="Name" name="name" required/>
-              <input className="my-4 p-2 bg-slate-500 rounded-lg my-2" type="text" placeholder="Email" name="email" required/>
+              <input className="my-4 p-2 bg-slate-500 rounded-lg my-2" type="email" placeholder="Email" name="email" required/>
               <textarea className="p-2 bg-slate-500 text-justify rounded-lg my-2" name="message" row="10" placeholder="Message" required></textarea>
             </div>
-            <button className=" flex-col justify-center content-center items-center w-1/2 text-white border-2  border-sky-500 px-4 py-3 my-8 flex  hover:bg-gradient-to-r from-sky-500 to-blue-800 rounded-xl ">Hit Me Up!</button>
+            <button className=" flex-col justify-center content-center items-center w-1/2 text-white border-2  border-sky-500 px-4 py-3 my-8 flex  hover:bg-blue-500 rounded-xl font-bold tracking-wider">Hit Me Up!</button>
         </form>
       </div>
     )

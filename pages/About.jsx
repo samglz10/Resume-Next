@@ -7,13 +7,13 @@ const About = () => {
         <div name="about" className='h-screen w-full text-white bg-slate-700 '>
             <div className="flex flex-col justify-center items-center w-full h-full ">
                 <div className="m-w-full w-full px-4 grid grid-cols-2 gap-8">
-                    <div className="sm:text-center pb-8 pl-4">
+                    <div className="sm:text-center pb-8 pl-4 m-auto flex flex-col items-center">
                         <p className="text-4xl font-bold inline border-b-sky-500 border-b-4 text-white ">About Me</p>
                     </div>
                 </div>
                 <div className="m-w-full w-full px-4 sm:grid grid-cols-2 gap-8 text-left">
-                    <div className="sm:text-center pb-8 pl-4">
-                     <Image src="/public/about-img.jpg" alt="about me" width={500} height={500} className="rounded-full object-cover w-20 h-20 m-5 hover:cursor-pointer"/>
+                    <div className="flex justify-center items-center w-full h-full">
+                     <Image src="/about-pic.jpg" alt="about me" width={300} height={300} className="rounded-sm m-auto"/>
                     </div>
                     <div>
                         <p className='text-lg px-4  sm:overflow-auto'>

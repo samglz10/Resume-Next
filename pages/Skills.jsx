@@ -8,6 +8,17 @@ const Skills = () => {
     //const[endorsement, setEndorsement] = useState(false);
     //const handleClick = () => setEndorsement()
 
+    const skills = [
+        { id: 1, src: '/HTML5-logo.svg', title: 'HTML' },
+        { id: 2, src: '/csslogo.svg', title: 'CSS' },
+        { id: 3, src: '/JavaScript_logo.svg', title: 'JavaScript' },
+        { id: 4, src: '/React-icon.svg', title: 'React' },
+        { id: 5, src: '/NodeJS-logo.svg', title: 'Express/Node JS' },
+        { id: 6, src: '/Typescript-log.svg', title: 'TypeScript' },
+        { id: 7, src: '/PostgreSQL-logo.svg', title: 'SQL' },
+        { id: 8, src: '/prisma-3.svg', title: 'Prisma' },
+    ]
+
     return (
         <div name='skills' className=' w-full md:h-screen  bg-slate-700 text-white flex flex-col justify-center px-5 '> 
         {/*Container */}  
@@ -18,46 +29,13 @@ const Skills = () => {
                 </div>
                 
                 {/* Container for all icons*/}
-                <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-5 text-center rounded-lg  gap-10 '>
-                    <div className='shadow-xl hover:shadow-sky-500 hover:scale-110 duration-500 bg-slate-700 m-5 flex justify-between flex-col'>
-                        <Image src="/HTML5-logo.svg" alt="HTML Logo" width={500} height={500} className='w-20 mx-auto my-auto bottom-0 '/>
-                        <p className='py-4'>HTML</p>
-                        
-                    </div> 
-                    <div className='shadow-lg hover:shadow-sky-500 hover:scale-110 duration-500 bg-slate-700 m-5 flex justify-between flex-col'>
-                        <Image src="/csslogo.svg" alt="CSS Logo" width={500} height={500} className='w-20 mx-auto my-auto bottom-0'/>
-                        <p className='py-4'>CSS</p>
-                        
-                    </div>
-                    <div className='shadow-lg hover:shadow-sky-500 hover:scale-110 duration-300 bg-slate-700 m-5 flex justify-between flex-col'>
-                        <Image src="/JavaScript_logo.svg" alt="JavaScript Logo" width={500} height={500} className='w-20 mx-auto my-auto bottom-0'/>
-                        <p className='py-4'>JavaScript</p>
-                        
-                    </div>
-                    <div className='shadow-lg hover:shadow-sky-500 hover:scale-110 duration-300 bg-slate-700 m-5 flex justify-between flex-col'>
-                        <Image src="/React-icon.svg" alt="React Logo" width={500} height={500} className='w-20 mx-auto my-auto bottom-0'/>
-                        <p className='py-4'>React</p>
-                        
-                    </div>
-                    <div className='shadow-lg hover:shadow-sky-500 hover:scale-110 duration-300 bg-slate-700 m-5 flex justify-between flex-col'>
-                        <Image src="/NodeJS-logo.svg" alt="Node JS Logo" width={500} height={500} className='w-20 mx-auto my-auto bottom-0'/>
-                        <p className='py-4'>Express/Node JS</p>
-                        
-                    </div>
-                    <div className='shadow-lg hover:shadow-sky-500 hover:scale-110 duration-300 bg-slate-700 m-5 flex justify-between flex-col'>
-                        <Image src="/Typescript-log.svg" alt="TypeScript Logo" width={500} height={500} className='w-20 mx-auto my-auto bottom-0'/>
-                        <p className='py-4 m'>TypeScript</p>
-                        
-                    </div>
-                    <div className='shadow-lg hover:shadow-sky-500 hover:scale-110 duration-300 bg-slate-700 m-5 flex justify-between flex-col'>
-                        <Image src="/PostgreSQL-logo.svg" alt="SQL Logo" width={500} height={500} className='w-20 mx-auto my-auto bottom-0'/>
-                        <p className='py-4'>SQL</p>
-                        
-                    </div> 
-                    <div className='shadow-lg hover:shadow-sky-500 hover:scale-110 duration-300 bg-slate-700 m-5 flex justify-between flex-col'>
-                        <Image src="/prisma-3.svg" alt="Prisma Logo" width={500} height={500} className='w-20 mx-auto my-auto bottom-0'/>
-                        <p className='py-4 m-0'>Prisma</p>
-                    </div>
+                <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8'>
+                    {skills.map(({id, src, title}) => (
+                        <div key={id} className='shadow-sm shadow-slate-900 hover:scale-110 duration-700 rounded-lg  hover:shadow-sky-600 flex flex-col justify-between p-8'>
+                            <Image src={src} alt={`${title} Logo`} width={500} height={500} className='w-20 mx-auto my-auto'/>
+                            <p className='py-4'>{title}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

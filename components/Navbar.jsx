@@ -19,7 +19,8 @@ return (
             <Image src="/profile.jpg" alt="My Profile" width={500} height={500} className="rounded-full object-cover w-20 h-20 m-5 hover:cursor-pointer"/>
         </a>
          {/* WebMenu*/}
-            <ul className="hidden md:flex flex-row justify-between items-center hover:cursor-pointer text-spacing" >
+            <ul className="hidden md:flex flex-row justify-between items-center hover:cursor-pointer text-spacing text-2xl font-bold
+    " >
                 <li className="px-5">
                     <Link to="home"  smooth="true" duration={500} >
                         Home
@@ -51,14 +52,14 @@ return (
             </ul>
 
         {/* Hamburger*/}
-        <div onClick={handleClick} className= "md:hidden z-10">
+        <div onClick={handleClick} className= "md:hidden z-10 hover:cursor-pointer w-8 h-8 flex justify-center items-center ">
             {/*ternary function */}
-            {!nav ? <FaBars/> : <FaTimes/>}
+            {!nav ? <FaBars className="text-white w-12 h-12"/> : <FaTimes className="text-white w-12 h-12"/>}
             {}
         </div>
         {/* mobile menu*/}
         <div className={!nav ? "hidden":"absolute text-center top-0 left-0 w-full h-screen text-white bg-gradient-to-r from-sky-500 to-blue-800 flex flex-col justify-center items-center z-30"}>
-        <ul>
+        <ul className="text-xl font-bold hover:cursor-pointer text-spacing flex flex-col justify-center items-center"> 
             <li className="py-6 text-4xl flex flex-col" >
                 <Link onClick={handleClick} to="home"  smooth="true" duration={500}>
                         Home
@@ -92,19 +93,19 @@ return (
         {/*Icons*/}
         <div className="hidden lg:flex fixed flex-row left-0 top-1/2 m-auto -translate-y-1/2 pl-2 z-30">
             <ul>
-                <li className=" w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500 px-[10px] rounded-xl">
+                <li className=" w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500 px-[10px] rounded-xl font-bold">
                     <a className= "flex justify-between items-center w-full text-gray-300"
                     href="https://www.linkedin.com/in/samuelegonzalez/"> LinkedIn <FaLinkedin size={40}/></a>
                 </li>
-                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900 px-[10px] rounded-xl outline-white">
+                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900 px-[10px] rounded-xl outline-white font-bold">
                     <a className= "flex justify-between items-center w-full text-gray-300"
                     href="https://github.com/samglz10"> Github <FaGithub size={40}/></a>
                 </li>                
-                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600 px-[10px] rounded-xl">
+                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600 px-[10px] rounded-xl font-bold">
                     <a className= "flex justify-between items-center w-full text-gray-300"
                     href="mailto:samglz10@gmail.com?&subject=Checked out your site from Vercel!"> Email <HiOutlineMail size={40}/></a>
                 </li>                
-                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-teal-500 px-[10px] rounded-xl">
+                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-teal-500 px-[10px] rounded-xl font-bold">
                     <a className= "flex justify-between items-center w-full text-gray-300"
                     href="/GonzalezResume.pdf" alt="Resume PDF download"> Resume <BsFillPersonLinesFill size={40}/></a>
                 </li>

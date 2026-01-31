@@ -16,7 +16,7 @@ const Home = () => {
                 </p>
                 <div>
                     <Link to="work" smooth={true} duration={500}>
-                        <button className="text-white border-2  border-sky-500 px-6 py-3 my-2 flex items-center hover:bg-gradient-to-r from-sky-500 to-blue-800 rounded-xl">
+                        <button className="text-white border-2  border-sky-500 px-6 py-3 my-2 flex items-center hover:bg-blue-500 rounded-xl font-bold tracking-wider">
                             Check out my work!
                             <HiArrowNarrowRight className="ml-4" />
                         </button>
