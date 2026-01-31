@@ -9,27 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "^4.5.0",
-    "dotenv": "^16.0.3",
-    "fs": "^0.0.1-security",
+    "@prisma/client": "^4.16.2",
+    "dotenv": "^16.6.1",
+    "fs": "0.0.1-security",
     "next": "13.0.2",
-    "next-auth": "^4.15.1",
+    "next-auth": "^4.24.13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.6.0",
-    "react-scroll": "^1.8.8"
+    "react-icons": "^4.12.0",
+    "react-scroll": "^1.9.3"
   },
   "devDependencies": {
-    "@types/node": "^18.11.9",
+    "@types/node": "^18.19.130",
     "@types/react": "18.0.25",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.24",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.2",
-    "postcss": "^8.4.18",
-    "prisma": "^4.5.0",
-    "tailwindcss": "^3.2.2",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.8.4"
+    "postcss": "^8.5.6",
+    "prisma": "^4.16.2",
+    "tailwindcss": "^3.4.19",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "main": "next.config.js",
