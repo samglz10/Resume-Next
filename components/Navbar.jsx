@@ -1,142 +1,102 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import Image from 'next/image'
-import{AiOutlineHome} from 'react-icons/ai'
-import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
-import {HiOutlineMail} from 'react-icons/hi';
-import {BsFillPersonLinesFill} from 'react-icons/bs'
-import {Link} from 'react-scroll'
-import 'tailwindcss/tailwind.css'
-import LoginButton from '../pages/login';
+import { AiOutlineHome } from 'react-icons/ai'
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { Link } from 'react-scroll';
+import 'tailwindcss/tailwind.css';
+//import LoginButton from '../pages/login';
 
 
 const Navbar = () => {
-    const[nav, setNav] = useState(false);
+    const [nav, setNav] = useState(false);
     //setNav will set nav to it's opposite value
     const handleClick = () => setNav(!nav)
-return (
-    <nav className ="fixed w-full h-[100px] flex justify-between items-center px-4  text-white bg-gradient-to-r from-sky-500 to-blue-800 text-spacing z-30"> 
-        <a  href="/"  smooth="true" duration={500} className="p"> 
-            <Image src="/profile.jpg" alt="My Profile" width={500} height={500} className="rounded-full object-cover w-20 h-20 m-5 hover:cursor-pointer"/>
-        </a>
-         {/* WebMenu*/}
-            <ul className="hidden md:flex flex-row justify-between items-center hover:cursor-pointer text-spacing text-2xl font-bold
-    " >
-                <li className="px-5">
-                    <Link to="home"  smooth="true" duration={500} >
+    return (
+        <nav className="fixed h-[75px] flex justify-between items-center px-4 text-white bg-gradient-to-r from-sky-500 to-blue-800 text-spacing z-30 shadow-md shadow-slate-900 w-full">
+            <a href="/" smooth="true" duration={500} className="p">
+                <Image src="/profile.jpg" alt="My Profile" width={500} height={500} className="rounded-full object-cover w-10 h-10 m-auto hover:cursor-pointer" />
+            </a>
+            {/* WebMenu*/}
+            <ul className="hidden desktop:flex flex-row justify-between items-center hover:cursor-pointer text-spacing text-2xl font-bold" >
+                <li className="px-5 flex flex-col hover:drop-shadow-[0_5px_5px_rgba(0,0,0,2)] transition duration-200" >
+                    <Link to="home" smooth="true" duration={500} >
                         Home
                     </Link>
                 </li>
-                <li className="px-5">
-                    <Link  to="about"  smooth="true" duration={500}>
+                <li className="px-5 hover:drop-shadow-[0_5px_5px_rgba(0,0,0,1)] transition duration-200">
+                    <Link to="about" smooth="true" duration={500}>
                         About
                     </Link>
                 </li>
-                <li className="px-5">
-                    <Link  to="skills"  smooth="true" duration={500}>
+                <li className="px-5 hover:drop-shadow-[0_5px_5px_rgba(0,0,0,1)] transition duration-200">
+                    <Link to="skills" smooth="true" duration={500}>
                         Skills
                     </Link>
                 </li>
-                <li className="px-5">
-                    <Link  to="work"  smooth="true" duration={500}>
+                <li className="px-5 hover:drop-shadow-[0_5px_5px_rgba(0,0,0,1)] transition duration-200">
+                    <Link to="work" smooth="true" duration={500}>
                         Work
                     </Link>
                 </li>
-                <li className="px-5">
-                    <Link  to="contact"  smooth="true" duration={500}>
-                         Contact
+                <li className="px-5 hover:drop-shadow-[0_5px_5px_rgba(0,0,0,1)] transition duration-200">
+                    <Link to="contact" smooth="true" duration={500}>
+                        Contact
                     </Link>
                 </li>
-                <li className="px-5">
-                    <LoginButton/>
+                {/**
+                 *                 <li className="px-5">
+                    <LoginButton />
                 </li>
+                */}
+
             </ul>
 
-        {/* Hamburger*/}
-        <div onClick={handleClick} className= "md:hidden z-10 hover:cursor-pointer w-8 h-8 flex justify-center items-center ">
-            {/*ternary function */}
-            {!nav ? <FaBars className="text-white w-12 h-12"/> : <FaTimes className="text-white w-12 h-12"/>}
-            {}
-        </div>
-        {/* mobile menu*/}
-        <div className={!nav ? "hidden":"absolute text-center top-0 left-0 w-full h-screen text-white bg-gradient-to-r from-sky-500 to-blue-800 flex flex-col justify-center items-center z-30"}>
-        <ul className="text-xl font-bold hover:cursor-pointer text-spacing flex flex-col justify-center items-center"> 
-            <li className="py-6 text-4xl flex flex-col" >
-                <Link onClick={handleClick} to="home"  smooth="true" duration={500}>
-                        Home
-                </Link>
-            </li>
-            <li className="py-6 text-4xl" >
-                <Link onClick={handleClick} to="about"  smooth="true" duration={500}>
-                    About
-                </Link>
-            </li>
-            <li className="py-6 text-4xl" >
-                <Link onClick={handleClick} to="skills"  smooth="true" duration={500}>
-                    Skills
-                </Link>
-            </li>
-            <li className="py-6 text-4xl" >
-                <Link onClick={handleClick} to="work"  smooth="true" duration={500}>
-                    Work
-                </Link>
-            </li>
-            <li className="py-6 text-4xl" >
-                <Link onClick={handleClick} to="contact"  smooth="true" duration={500}>
-                    Contact
-                </Link>
-            </li>
-            <li className="py-6 text-4xl" >
-                <LoginButton>Sign in </LoginButton>
-            </li>
-        </ul>
-        </div>
-        {/*Icons*/}
-        <div className="hidden lg:flex fixed flex-row left-0 top-1/2 m-auto -translate-y-1/2 pl-2 z-30">
-            <ul>
-                <li className=" w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500 px-[10px] rounded-xl font-bold">
-                    <a className= "flex justify-between items-center w-full text-gray-300"
-                    href="https://www.linkedin.com/in/samuelegonzalez/"> LinkedIn <FaLinkedin size={40}/></a>
-                </li>
-                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900 px-[10px] rounded-xl outline-white font-bold">
-                    <a className= "flex justify-between items-center w-full text-gray-300"
-                    href="https://github.com/samglz10"> Github <FaGithub size={40}/></a>
-                </li>                
-                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600 px-[10px] rounded-xl font-bold">
-                    <a className= "flex justify-between items-center w-full text-gray-300"
-                    href="mailto:samglz10@gmail.com?&subject=Checked out your site from Vercel!"> Email <HiOutlineMail size={40}/></a>
-                </li>                
-                <li className="w-[160px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-teal-500 px-[10px] rounded-xl font-bold">
-                    <a className= "flex justify-between items-center w-full text-gray-300"
-                    href="/GonzalezResume.pdf" alt="Resume PDF download"> Resume <BsFillPersonLinesFill size={40}/></a>
-                </li>
-            </ul>
-        </div>
+            {/* Hamburger*/}
+            <div onClick={handleClick} className="z-10 hover:cursor-pointer w-8 h-8 flex justify-center items-center ">
+                {/*ternary function */}
+                {!nav ? < FaBars  className="desktop:hidden  w-12 h-12 z-100 text-white hover:cursor-pointer" /> : <FaTimes  className="text-white w-12 h-12 z-100" />}
+            </div>
 
-        {/* Icons web menu */}
-        <div className="sm:hidden flex fixed flex-row place-content-center bottom-0 left-0 w-full bg-gray-800 rounded-t-lg  z-30">
-            <ul className='flex flex-row w-auto justify-center items-center text-center'>
-                <li className=" w-[80px] h-[60px] object-cover flex flex-row justify-between text-black items-center bg-blue-500 rounded-t-lg">
-                    <a className= "flex justify-between items-center w-full text-gray-300 mx-5"
-                    href="https://www.linkedin.com/in/samuelegonzalez/"> <FaLinkedin  size={40}/></a>
-                </li>
-                <li className="w-[80px] h-[60px] flex justify-between text-black items-center bg-gray-900 outline-white">
-                    <a className= "flex justify-between items-center w-full text-gray-300 mx-5"
-                    href="https://github.com/samglz10"><FaGithub size={40}/></a>
-                </li>                
-                <li className="w-[80px] h-[60px] flex justify-between text-black items-center bg-red-600 rounded-t-lg">
-                    <a className= "flex justify-between items-center w-full text-gray-300 mx-5"
-                    href="mailto:samglz10@gmail.com?&subject=Checked out your site from Vercel!">  <HiOutlineMail size={40}/></a>
-                </li>                
-                <li className="w-[80px] h-[60px] flex justify-between text-black items-center  bg-teal-500 rounded-t-lg ">
-                    <a className= "flex justify-between items-center w-full text-gray-300 mx-5"
-                    href="/Samuel_Gonzalez-Renteria_Resume_08-11-2022-19-51-53.pdf" alt="Resume PDF download"> <BsFillPersonLinesFill size={40}/></a>
-                </li>
-            </ul>
-        </div>
-
-
-    </nav>
-)
+          
+            {/* mobile menu*/}
+            <div className={!nav ? "hidden" : "absolute text-center top-0 left-0 w-full h-screen text-white bg-gradient-to-r from-sky-500 to-blue-800 flex flex-col justify-center items-center z-30  md:hidden"}>
+                <ul className="text-xl font-bold hover:cursor-pointer text-spacing flex flex-col justify-center items-center">
+                    <li className="py-6 text-4xl px-5 hover:drop-shadow-[0_5px_5px_rgba(0,0,0,1)] transition duration-200 flex flex-col" >
+                        <Link onClick={handleClick} to="home" smooth="true" duration={500}>
+                            Home
+                        </Link>
+                    </li>
+                    <li className="py-6 text-4xl px-5 hover:drop-shadow-[0_5px_5px_rgba(0,0,0,1)] transition duration-200" >
+                        <Link onClick={handleClick} to="about" smooth="true" duration={500}>
+                            About
+                        </Link>
+                    </li>
+                    <li className="py-6 text-4xl px-5 hover:drop-shadow-[0_5px_5px_rgba(0,0,0,1)] transition duration-200" >
+                        <Link onClick={handleClick} to="skills" smooth="true" duration={500}>
+                            Skills
+                        </Link>
+                    </li>
+                    <li className="py-6 text-4xl px-5 hover:drop-shadow-[0_5px_5px_rgba(0,0,0,1)] transition duration-200" >
+                        <Link onClick={handleClick} to="work" smooth="true" duration={500}>
+                            Work
+                        </Link>
+                    </li>
+                    <li className="py-6 text-4xl px-5 hover:drop-shadow-[0_5px_5px_rgba(0,0,0,1)] transition duration-200" >
+                        <Link onClick={handleClick} to="contact" smooth="true" duration={500}>
+                            Contact
+                        </Link>
+                    </li>
+                    {/** 
+                    <li className="py-6 text-4xl px-5 hover:drop-shadow-[0_5px_5px_rgba(0,0,0,1)] transition duration-200" >
+                        <LoginButton>Sign in </LoginButton>
+                    </li>
+                    */}
+                </ul>
+            </div>
+        </nav>
+    )
 }
 
 export default Navbar

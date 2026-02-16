@@ -1,74 +1,62 @@
-import React from 'react' 
+import React from 'react'
 import Image from 'next/image'
-import placeholder from '../public/placeholder.svg'
-import Javascriptlogo from '../public/javascriptlogo.png' 
 
 
 const Work = () => {
+    const projects = [
+        {
+            id: 1,
+            title: 'Fly JS Game!',
+            src: '/icons8-github-512.png',
+            url_link: 'https://github.com/samglz10/web-game-starter',
+            titleStyle: 'flex-col'
+        },
+        {
+            id: 2,
+            title: 'Favorite Movies Watchlist Site!',
+            src: '/movies-logo.svg',
+            url_link: 'https://github.com/samglz10/t3-starter-mysql',
+            titleStyle: 'flex-col'
+        },
+        {
+            id: 4,
+            title: 'Comics in Context',
+            src: '/comic-logo.svg',
+            url_link: 'https://github.com/samglz10/rr-4-comics-in-context-.git',
+            titleStyle: 'flex-col'
+        }
+        
+    ]
 
     return (
-      <div name= 'work' className="  md:w-full  md:h-screen bg-slate-700 text-white flex flex-col justify-center px-5 ">
-        <div className='max-w-full p-4 flex flex-col justify-center w-full h-full px-16 '>
-            <div className='pb-8'>
-                <p className='text-4xl font-bold inline border-b-4 text-white border-sky-700'>
-                    Work</p>
-                <p className='py-6'>Checkout some of my work!</p>
+        <div name='work' className=" flex flex-col justify-center items-center h-screen my-10 text-white bg-slate-700 px-5 margin-10 sm:text-sm md:text-base lg:text-lg">
+            <div className='max-w-full mx-auto px-4 flex flex-col justify-center h-full m-auto'>
+                <div className=' flex flex-col items-start text-left '>
+                    <p className='text-4xl font-bold inline border-b-4 text-white border-sky-700'>
+                        Work</p>
+                    <p className='py-5'>Checkout some of my work!</p>
+                </div>
+                {/*Container for my work */}
+                <div className='grid grid-flow-col gap-5 w-full overflow-x-auto h-3/4 p-5 scrollbar-hide scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-700'>
+                    {projects.map(({ id, title, src, url_link, titleStyle }) => (
+                        <div key={id} className='bg-image-card shadow-sm shadow-slate-900 hover:scale-110 duration-500 rounded-lg hover:bg-slate-600 flex flex-col justify-center items-center p-5 my-10 '>
+                            {/* Hover effects */}
+                            <span className={`flex ${titleStyle} items-center text-l font-bold text-white tracking-wider text-center`}>
+                                {title}
+                            </span>
+                            <Image src={src} alt={title} width={500} height={500} className=" flex mx-auto justify-center items-center rounded-full object-cover w-20 h-20 m-auto " />
+                            <div className='text-center flex justify-center items-center w-full'>
+                                {/*upload Demo url_link when uploaded to another host site */}
+                                <a className='text-white border-2 w-20 h-10 border-blue-500 p-3 m-2 flex items-center hover:bg-blue-500 rounded-xl font-bold tracking-wider hover:cursor-pointer'> Demo</a>
+                                {/*upload Github url_link */}
+                                <a href={url_link} className='text-white border-2 w-20 h-10 border-blue-500 px-4 py-3 m-2 flex items-center hover:bg-blue-500 rounded-xl font-bold tracking-wider hover:cursor-pointer'> Code </a>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-            {/*Container for my work */}
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-5'>
-                <div>
-                <div className='shadow-lg shadow-sky-500 group container rounded-md flex justify-center items-center mx-auto bg-image-card h-72'>
-                    {/* Hover effects */}
-                    <div className=''>
-                        <span className='flex flex-col items-center text-2xl font-bold text-white tracking-wider bg-image-card text-center'>
-                            Fly JS Game!
-                        </span>
-                        <Image src="/icons8-github-512.png" alt="My Profile" width={500} height={500} className=" flex mx-auto justify-center items-center rounded-full object-cover w-20 h-20 m-5 "/>
-                        <div className='opacity:0 text-center hover:opacity-110 bg-imagecard'>
-                            {/*upload Demo code when uploaded to another host site */}
-                            <a  className='hover:opacity:0 text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Demo</a>
-                            {/*upload Github code */}
-                            <a href="https://github.com/samglz10/web-game-starter" className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Code </a>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            {/* Second Grid image */}
-                <div className='shadow-lg shadow-sky-500 group container rounded-md flex justify-center items-center mx-auto bg-image-card h-72'>
-                    {/* Hover effects */}
-                    <div className=''>
-                        <span className='flex flex-col items-center text-2xl font-bold text-white tracking-wider bg-image-card text-center'>
-                            Favorite Movies Watchlist Site!
-                        </span>
-                        <Image src="/movies-logo.svg" alt="My Profile" width={500} height={500} className=" flex mx-auto justify-center items-center rounded-full object-cover w-20 h-20 m-5 "/>
-                        <div className='pt-8 text-center'>
-                            {/*upload Demo code when uploaded to another host site */}
-                            <a  className='hover:opacity:0 text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Demo</a>
-                            {/*upload Github code */}
-                            <a href="https://github.com/samglz10/t3-starter-mysql" className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Code </a>
-                        </div>
-                    </div>
-                </div>
-            {/* Third Grid image */}
-                <div className='shadow-lg shadow-sky-500 group container rounded-md flex justify-center items-center mx-auto bg-image-card h-72'>
-                    {/* Hover effects */}
-                    <div className=''>
-                        <span className='flex flex-col items-center text-2xl font-bold text-white tracking-wider bg-image-card text-center'>
-                            Comics in Context
-                        </span>
-                        <Image src="/comic-logo.svg" alt="My Profile" width={500} height={500} className=" flex mx-auto justify-center items-center rounded-full object-cover w-20 h-20 m-5 "/>
-                        <div className='pt-8 text-center'>
-                            {/*upload Demo code when uploaded to another host site */}
-                            <a  className='hover:opacity:0 text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Demo</a>
-                            {/*upload Github code */}
-                            <a href="https://github.com/samglz10/rr-4-comics-in-context-.git" className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'> Code </a>
-                        </div>
-                    </div>
-                </div>
         </div>
-      </div>
-      </div>
     )
-  }
-  
-  export default Work;
+}
+
+export default Work;

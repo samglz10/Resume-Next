@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    * {
+        box-sizing: border-box;
+    }
+    :root{
+          --color-background: #334155;
+          --color-primary: #0ea5e9;
+          --color-secondary: #1e40af;
+          --color-text: #F8FAFC;
+    
+    }
+    html{
+      width: 100%;
+    }
+    body {
+        width: 100%;
+      }
+}
+
+.bg-image-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+  }
+
+.bg-image-card:hover {
+    background-image: linear-gradient(
+      to right,
+      rgba(25, 83, 209, 0.786),
+      hsla(242,74%,61%, 0.8)
+    );
+    transition:  0.75s ease;
+  }

@@ -16,24 +16,23 @@ const Skills = () => {
         { id: 5, src: '/NodeJS-logo.svg', title: 'Express/Node JS' },
         { id: 6, src: '/Typescript-log.svg', title: 'TypeScript' },
         { id: 7, src: '/PostgreSQL-logo.svg', title: 'SQL' },
-        { id: 8, src: '/prisma-3.svg', title: 'Prisma' },
+        { id: 8, src: '/prisma-3.svg', title: 'Prisma' }
     ]
 
     return (
-        <div name='skills' className=' w-full md:h-screen  bg-slate-700 text-white flex flex-col justify-center px-5 '> 
+        <div name='skills' className='flex flex-col justify-center items-center  h-screen w-full my-10 text-white bg-slate-700 px-5 sm:text-sm md:text-base lg:text-lg'> 
         {/*Container */}  
-            <div className='max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full '>
-                <div>
-                    <p className='text-4xl font-bold inline border-b-4 text-white border-sky-700 '>Skills</p>
+            <div className=' flex flex-col justify-center items-start max-w-[1200px] h-full mx-auto px-4 w-full'>
+           
+                    <h4 className='text-4xl font-bold inline border-b-4 text-white border-sky-700 text-left  '>Skills</h4>
                     <p className='py-2 m-5'> The Languages I have worked with as well as some tools that I am familiar with.</p>
-                </div>
-                
+             
                 {/* Container for all icons*/}
-                <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8'>
+                <div className='w-full grid grid-cols-2 desktop:grid-cols-4 gap-8 text-center p-4  md:max-h-1/2 overflow-y-auto scrollbar-hide scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-700h-3/5'>
                     {skills.map(({id, src, title}) => (
-                        <div key={id} className='shadow-sm shadow-slate-900 hover:scale-110 duration-700 rounded-lg  hover:shadow-sky-600 flex flex-col justify-between p-8'>
-                            <Image src={src} alt={`${title} Logo`} width={500} height={500} className='w-20 mx-auto my-auto'/>
-                            <p className='py-4'>{title}</p>
+                        <div key={id} className='bg-image-card  shadow-sm shadow-slate-900 hover:scale-110 duration-500 rounded-lg  hover:bg-slate-600 flex flex-col justify-between p-8 max-w-xs  '>
+                            <Image src={src} alt={`${title} Logo`} width={250} height={250} className='w-10 mx-auto my-auto'/>
+                            <p className='py-1 overflow-hidden'>{title}</p>
                         </div>
                     ))}
                 </div>
