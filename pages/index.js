@@ -12,16 +12,16 @@ import Sidebar from '../components/Sidebar';
 export default function Main() {
   return (
     <>
-    <Navbar/>
-    <Sidebar/>
-    <div className=" grid grid-cols-1 container mx-auto p-4 desktop:p-12 laptop:p-12 tablet:p-8 mobile:p-4 bg-slate-700 text-white ">
-      <Home />
-      <About/>
-      <Skills/>
-      <Work/>
-      <Contact/>
-    </div>
+      <Navbar />
+      <Sidebar />
+      <div className=" grid grid-cols-1 container mx-auto p-5 desktop:p-10 laptop:p-10 tablet:p-8 mobile:p-2 bg-slate-700 text-white gap-10 ">
+        <Home />
+        <About />
+        <Skills />
+        <Work />
+        <Contact />
+      </div>
 
     </>
-   )
+  )
 }

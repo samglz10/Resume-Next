@@ -47,11 +47,11 @@ const Sidebar = () => {
     return (
         <div>
             {/*desktop Icons*/}
-            <div className="hidden desktop:flex fixed flex-row left-0 top-1/2 m-auto -translate-y-1/2 pl-2 z-30">
+            <div className="hidden tablet:flex fixed flex-row left-0 top-1/2 m-auto -translate-y-1/2 pl-1 z-30">
                 <ul>
                     {links.map(({ id, label, icon, href, style, download }) => (
                         <li key={id} className={`w-[150px] h-[60px] flex justify-between text-black items-center ml-[-100px] hover:ml-[-10px] duration-300 px-[10px] rounded-r-xl font-bold ${style}`}>
-                            <a className="flex justify-between items-center w-full text-gray-300"
+                            <a className="flex justify-between items-center text-right w-full text-gray-300 p-2"
                                 href={href} download={download}>
                                 {label} {icon}
                             </a>
@@ -61,7 +61,7 @@ const Sidebar = () => {
             </div>
 
             {/* Icons web menu bottom */}
-            <div className="flex tablet:hidden fixed  flex-row place-content-center bottom-0 left-0 w-full bg-gray-800 pt-1 z-30 ">
+            <div className="flex mobile:hidden fixed  flex-row place-content-center bottom-0 left-0 w-full bg-gray-800 pt-1 z-30 ">
                 <ul className='flex flex-row  justify-center items-center text-center w-screen'>
                     {links.map(({ id, icon, href, style, download }) => (
                         <li key={id} className={`w-[60px] h-[45px] object-cover mx-0.5 flex flex-row justify-between pt-0.5 text-black items-center rounded-t-xl font-bold ${style} hover:cursor-pointer transform hover:scale-110 duration-300`}>
