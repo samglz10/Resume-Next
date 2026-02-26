@@ -31,15 +31,18 @@ const Work = () => {
     return (
         <div name='work' className=" flex flex-col justify-center items-center h-screen my-10 text-white bg-slate-700 px-5 margin-10 sm:text-sm md:text-base lg:text-lg">
             <div className='w-full mx-auto px-4 flex flex-col justify-center h-full m-auto'>
-                <div className=' flex flex-col items-start text-left'>
+                <div className=' flex flex-col items-center justify-center w-fulltext-left h-1/3'>
                 <h4 className='font-bold text-white text-2xl mobile:text-2xl desktop:text-3xl wide:text-4xl py-1 inline border-b-4  border-sky-700 text-left w-full'    >
                         Work</h4>
-                    <p className='py-5'>Checkout some of my work!</p>
+                    <p className='my-5 mobile:text-sm desktop:text-base wide:text-lg tablet:text-sm w-full mobile:overflow-auto tablet:overflow-auto desktop:overflow-auto  overflow-x-hidden  scroll text-wrap h-1/2'>
+                    Check out some of my work! This gallery showcases a collection of my projects, demonstrating my <strong className='text-sky-400'>coding skills and experience</strong>. 
+                    You can view the source code for each project on <strong className='text-sky-400'>GitHub</strong> by clicking the "Code" button.
+                    </p>
                 </div>
                 {/*Container for my work */}
-                <div className='grid grid-flow-col gap-5 w-full overflow-x-auto h-3/5 p-5 scrollbar-hide scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-700'>
+                <div className='grid grid-flow-col gap-2 w-full overflow-x-auto h-1/2 p-5 scrollbar-hide scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-700'>
                     {projects.map(({ id, title, src, url_link, titleStyle }) => (
-                        <div key={id} className='bg-image-card shadow-sm shadow-slate-900 hover:scale-110 duration-500 rounded-lg hover:bg-slate-600 flex flex-col justify-center items-center p-5 my-10 '>
+                        <div key={id} className='bg-image-card shadow-sm shadow-slate-900 hover:scale-110 duration-500 rounded-lg hover:bg-slate-600 flex flex-col justify-center items-center p-5 my-2 '>
                             {/* Hover effects */}
                             <span className={`flex ${titleStyle} items-center text-l font-bold text-white tracking-wider text-center`}>
                                 {title}

@@ -9,8 +9,8 @@ const Contact = () => {
             <h4 className="font-bold text-white text-2xl mobile:text-2xl desktop:text-3xl wide:text-4xl py-1 inline border-b-4  border-sky-700 text-left w-full">Contact</h4>
             <p className="text-white py-5"> Submit the form to or you can email me at the bottom</p>
           </div>
-          <div className="flex flex-col justify-center text-center content-center w-full rounded-md bg-slate-800  p-3">
-            <div className="flex flex-col desktop:flex-row gap-5 w-full">
+          <div className="flex flex-col justify-center text-center items-center w-full rounded-md bg-slate-800  p-3">
+            <div className="flex flex-col desktop:flex-row gap-2 w-full">
               <div className="flex flex-col w-full">
                 <label className="text-left text-sm font-bold text-white" htmlFor="name">Name</label>
                 <input className="p-2 flex flex-wrap bg-slate-500 rounded-lg my-2 focus:ring-2 focus:ring-sky-500 focus:outline-none" type="text" placeholder="Your Name here" name="name" required />
@@ -20,7 +20,7 @@ const Contact = () => {
                 <input className="p-2 flex flex-wrap bg-slate-500 rounded-lg my-2 focus:ring-2 focus:ring-sky-500 focus:outline-none" type="email" placeholder="Your Email here" name="email" required />
               </div>
             </div>
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full gap-2">
               <label className="text-left text-sm font-bold text-white" htmlFor="message">Message</label>
               <textarea className="p-2 bg-slate-500 text-justify rounded-lg my-2 focus:ring-2 focus:ring-sky-500 focus:outline-none" name="message" rows="5" placeholder="Your Message here" required></textarea>
             </div>

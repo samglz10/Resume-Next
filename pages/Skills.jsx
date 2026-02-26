@@ -33,10 +33,14 @@ const Skills = () => {
             {/*Container */}
             <div className=' flex flex-col justify-center items-start max-w-[1200px] h-full mx-auto px-4 w-full'>
                 <h4 className='font-bold text-white text-2xl mobile:text-2xl desktop:text-3xl wide:text-4xl py-1 inline border-b-4  border-sky-700 text-left w-full'>Skills</h4>
-                <p className='py-2 m-5'> The Languages I have worked with as well as some tools that I am familiar with. I use these skills to build <strong className='text-sky-400'>efficient and scalable web applications</strong>. Like, the one here!</p>
+                <p className='my-5 mobile:text-sm desktop:text-base wide:text-lg tablet:text-sm w-full mobile:overflow-auto tablet:overflow-auto desktop:overflow-auto  overflow-x-hidden  scroll text-wrap h-1/6'>
+                    I leverage a diverse set of languages and tools to build <strong className='text-sky-400'>efficient and scalable web applications</strong>.
+                    My core stack includes HTML, CSS, JavaScript, React, and TypeScript for dynamic user interfaces. On the backend, I utilize Node.js, Express, and Python, integrated with databases like PostgreSQL and MongoDB via Prisma.
+                    I also employ tools like Databricks, Linux, and the Microsoft Suite to optimize workflows and data management.
+                </p>
 
                 {/* Container for all icons*/}
-                <div className='w-full grid grid-cols-2 desktop:grid-cols-4 gap-8 text-center p-4  md:max-h-1/2 overflow-y-auto scrollbar-hide scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-700 h-3/5'>
+                <div className='w-full grid grid-cols-2 desktop:grid-cols-4 gap-3 text-center p-4  mobile:max-h-1/3 overflow-y-auto scrollbar-hide scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-700 h-1/2'>
                     {skills.map(({ id, src, title }) => (
                         <div key={id} className='bg-image-card  shadow-sm shadow-slate-900 hover:scale-110 duration-500 rounded-lg  hover:bg-slate-600 flex flex-col justify-between p-2 max-w-xs  '>
                             <Image src={src} alt={`${title} Logo`} width={500} height={500} className='w-10 mx-auto my-auto ' />

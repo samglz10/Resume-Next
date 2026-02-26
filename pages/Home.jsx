@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div name="home" className=' flex flex-col justify-center items-center w-full h-screen text-white bg-slate-700 px-5 '>
             {/*Container*/}
-            <div className=" w-full mx-auto px-4 flex flex-col justify-center h-full overflow-x-hidden">
+            <div className=" w-full mx-auto  flex flex-col justify-center h-full overflow-x-hidden">
                 <h4 className="font-bold text-white text-2xl mobile:text-2xl desktop:text-3xl wide:text-4xl py-1 inline border-b-4  border-sky-700 text-left w-full" > Hi, I'm Samuel Gonzalez </h4>
                 <h2 className=" py-1  text-white mobile:text-lg desktop:text-xl wide:text-2xl"> I am a Full Stack Developer</h2>
                 <div className='flex flex-col justify-start items-center overflow-x-hidden scroll h-2/5 m-5'>
@@ -24,7 +24,7 @@ const Home = () => {
                     <p className=" text-white  w-full mobile:text-sm desktop:text-base wide:text-lg "> Please feel free to provide any feedback or any issues that you encounter at this site.You can find my github repo located on the left(if on <strong className='text-sky-500'>desktop</strong>) or bottom of the screen(if on  <strong className='text-sky-500'>mobile</strong>).</p>
 
                 </div>
-                <div className='flex flex-row justify-start items-center gap-5 w-full'>
+                <div className='flex flex-row justify-start items-center  w-full'>
                     <Link to="skills" smooth={true} duration={500} >
                         <button className="text-white border-2 text-center border-blue-500 px-6 py-3 my-2 flex justify-around items-center hover:bg-blue-500 rounded-xl font-bold tracking-wider w-full ">
                             Check out my skills!
