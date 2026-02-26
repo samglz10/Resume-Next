@@ -21,7 +21,7 @@ const Home = () => {
                         This is a <strong className='text-sky-500'>fully responsive</strong> single page application that uses smooth scrolling to navigate between sections. I also implemented a mobile-first design to ensure that the site looks good on all devices.
                     </p>
                     <br></br>
-                    <p className=" text-white  w-full mobile:text-sm desktop:text-base wide:text-lg "> Please feel free to provide any feedback or any issues that you encounter at this site.You can find my github repo located on the left or bottom of the screen.</p>
+                    <p className=" text-white  w-full mobile:text-sm desktop:text-base wide:text-lg "> Please feel free to provide any feedback or any issues that you encounter at this site.You can find my github repo located on the left(if on <strong className='text-sky-500'>desktop</strong>) or bottom of the screen(if on  <strong className='text-sky-500'>mobile</strong>).</p>
 
                 </div>
                 <div className='flex flex-row justify-start items-center gap-5 w-full'>
