@@ -16,14 +16,12 @@ const Home = () => {
                 <h4 className="font-bold text-white text-2xl mobile:text-2xl desktop:text-3xl wide:text-4xl py-1 inline border-b-4  border-sky-700 text-left w-full" > Hi, I'm Samuel Gonzalez </h4>
                 <h2 className=" py-1  text-white mobile:text-lg desktop:text-xl wide:text-2xl"> I am a Full Stack Developer</h2>
                 <div className='flex flex-col justify-start items-center overflow-x-hidden scroll h-2/5 m-5'>
-                    <p className="py-4 text-white  w-full mobile:text-sm desktop:text-base wide:text-lg  m-5">
-                        I built this website in the hope of being able to show my knowledge of web development. I used <strong className='text-sky-500'>Next.js, Tailwind CSS, Vercel and Vite</strong>. I created this site to practive creating more complex and responsive websites.
-                        This is a single page application that uses smooth scrolling to navigate between sections. I also implemented a mobile-first design to ensure that the site looks good on all devices.
-                        <br></br>
-           
+                    <p className=" text-white  w-full mobile:text-sm desktop:text-base wide:text-lg">
+                        I built this website in the hope of being able to show my knowledge of web development. I used <strong className='text-sky-500'>Next.js, Tailwind CSS, Vercel and Vite</strong>.
+                        This is a <strong className='text-sky-500'>fully responsive</strong> single page application that uses smooth scrolling to navigate between sections. I also implemented a mobile-first design to ensure that the site looks good on all devices.
                     </p>
-
-                    <p className="py-4 text-white  w-full mobile:text-sm desktop:text-base wide:text-lg   m-5"> Please feel free to provide any feedback or any issues that you encounter at this site.You can find my github repo located on the left or bottom of the screen.</p>
+                    <br></br>
+                    <p className=" text-white  w-full mobile:text-sm desktop:text-base wide:text-lg "> Please feel free to provide any feedback or any issues that you encounter at this site.You can find my github repo located on the left or bottom of the screen.</p>
 
                 </div>
                 <div className='flex flex-row justify-start items-center gap-5 w-full'>

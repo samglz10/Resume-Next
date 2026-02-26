@@ -1,15 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
 
-import {useSession, signOut, getSession} from 'next-auth/react'
+import { useSession, signOut, getSession } from 'next-auth/react'
 
 const account = () => {
-    const {data: session, status} = useSession({required: true})
+    const { data: session, status } = useSession({ required: true })
     if (status === 'authenticated') {
         return (
             <div>
                 <p> Welcome {session.user.name}</p>
-                <button onClick={()=> signOut()} className="rounded-md h-20 w-20">Sign out</button>
+                <button onClick={() => signOut()} className="rounded-md h-20 w-20">Sign out</button>
             </div>
         )
     } else {
@@ -34,6 +34,6 @@ export const getServerSideProps = async (context) => {
         }
     }
     return {
-        props:{session},
+        props: { session },
     }
 }

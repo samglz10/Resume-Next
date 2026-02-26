@@ -13,7 +13,7 @@ const About = () => {
                         <Image src="/about-me.jpg" alt="about me" width={500} height={500} className="rounded-sm m-auto w-auto h-3/4" />
                     </div>
                     <div className='flex flex-col justify-start items-center overflow-x-hidden scroll h-1/3 m-5'>
-                        <p className='text-md px-4 w-full sm:overflow-auto md:overflow-auto lg:overflow-auto  overflow-x-hidden  scroll m-auto text-wrap'>
+                        <p className='text-md w-full sm:overflow-auto md:overflow-auto lg:overflow-auto  overflow-x-hidden  scroll m-auto text-wrap'>
                             As an <strong className='text-sky-400'>Automation and Data Solutions Specialist</strong>, I specialize in designing
                             tools that optimize internal processes and support agency-wide goals; supporting mission-critical operations across federal agencies including the <strong className='text-sky-400'> Federal
                             Bureau of Investigation (FBI), Department of State (DOS), and Department of Justice (DOJ) </strong>.My career has
