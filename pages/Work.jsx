@@ -32,11 +32,11 @@ const Work = () => {
         <div name='work' className=" flex flex-col justify-center items-center h-screen my-10 text-white bg-slate-700 px-5 margin-10 sm:text-sm md:text-base lg:text-lg">
             <div className='w-full mx-auto px-4 flex flex-col justify-center h-full m-auto'>
                 <div className=' flex flex-col items-center justify-center w-fulltext-left h-1/3'>
-                <h4 className='font-bold text-white text-2xl mobile:text-2xl desktop:text-3xl wide:text-4xl py-1 inline border-b-4  border-sky-700 text-left w-full'    >
+                    <h4 className='font-bold text-white text-2xl mobile:text-2xl desktop:text-3xl wide:text-4xl py-1 inline border-b-4  border-sky-700 text-left w-full'    >
                         Work</h4>
                     <p className='my-5 mobile:text-sm desktop:text-base wide:text-lg tablet:text-sm w-full mobile:overflow-auto tablet:overflow-auto desktop:overflow-auto  overflow-x-hidden  scroll text-wrap h-1/2'>
-                    Check out some of my work! This gallery showcases a collection of my projects, demonstrating my <strong className='text-sky-400'>coding skills and experience</strong>. 
-                    You can view the source code for each project on <strong className='text-sky-400'>GitHub</strong> by clicking the "Code" button.
+                        Check out some of my work! This gallery showcases a collection of my projects, demonstrating my <strong className='text-sky-400'>coding skills and experience</strong>.
+                        You can view the source code for each project on <strong className='text-sky-400'>GitHub</strong> by clicking the "Code" button.
                     </p>
                 </div>
                 {/*Container for my work */}
@@ -52,7 +52,7 @@ const Work = () => {
                                 {/*upload Demo url_link when uploaded to another host site */}
                                 <a className='text-white border-2 w-20 h-10 border-blue-500 p-3 m-2 flex items-center hover:bg-blue-500 rounded-xl font-bold tracking-wider hover:cursor-pointer'> Demo</a>
                                 {/*upload Github url_link */}
-                                <a href={url_link} className='text-white border-2 w-20 h-10 border-blue-500 px-4 py-3 m-2 flex items-center hover:bg-blue-500 rounded-xl font-bold tracking-wider hover:cursor-pointer'> Code </a>
+                                <a href={url_link} className='text-white border-2 w-20 h-10 border-blue-500 px-4 py-3 m-2 flex items-center hover:bg-blue-500 rounded-xl font-bold tracking-wider hover:cursor-pointer text'> Code </a>
                             </div>
                         </div>
                     ))}

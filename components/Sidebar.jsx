@@ -65,7 +65,7 @@ const Sidebar = () => {
                 <ul className='flex flex-row  justify-center items-center text-center w-screen'>
                     {links.map(({ id, icon, href, style, download }) => (
                         <li key={id} className={`w-[60px] h-[45px] object-cover  flex flex-row justify-between  text-black items-center rounded-t-xl font-bold ${style} hover:cursor-pointer transform hover:scale-110 duration-300`}>
-                            <a className="flex justify-between items-center w-full text-gray-300 mx-5"
+                            <a className="flex justify-center items-center w-full text-gray-300 mx-auto text-center"
                                 href={href} download={download}>
                                 {icon}
                             </a>
